@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #111;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px 50px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            color: #fff;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #e50914;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .featured {
+            margin-bottom: 50px;
+        }
+
+        .featured h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .movie-item {
+            flex: 0 0 calc(33.33% - 20px);
+            margin-bottom: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #111;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="netflix_logo.png" alt="Netflix Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Netflix</h1>
+            <p>Watch amazing TV shows and movies online.</p>
+            <button>Get Started</button>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Content</h2>
+            <div class="movie-list">
+                <!-- Featured movie items will go here -->
+                <div class="movie-item">
+                    <div style="background-color: #ff4500; height: 200px;"></div>
+                    <h3>Movie Title 1</h3>
+                </div>
+                <div class="movie-item">
+                    <div style="background-color: #4169e1; height: 200px;"></div>
+                    <h3>Movie Title 2</h3>
+                </div>
+                <div class="movie-item">
+                    <div style="background-color: #32cd32; height: 200px;"></div>
+                    <h3>Movie Title 3</h3>
+                </div>
+                <!-- Add more movie items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Netflix Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
